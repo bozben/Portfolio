@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title data-lang-key="pageTitle">Barış Özben - Geliştirici Portfolyosu</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="main-header">
+  <a href="#hakkimda" class="logo">[BꙪ]</a>
+  <div class="nav-links">
+    <a href="#projeler" data-lang-key="navProjects">Projeler</a>
+    <a href="#iletisim" data-lang-key="navContact">İletişim</a>
+    <div class="lang-switcher">
+      <a href="#" class="lang-btn active" data-lang="tr">TR</a>
+      <a href="#" class="lang-btn" data-lang="en">EN</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-section" id="hakkimda">
+  <h1 data-lang-key="heroName">Barış Özben</h1>
+  <p data-lang-key="heroSubtitle">Merhaba ben Barış. Web siteleri ve küçük ölçekli oyun projeleri geliştiriyorum. Çalışmalarımı bu portfolyoda bulabilirsiniz</p>
+  <a href="Media/Barış-Özben-FlowCV-Tr.pdf" class="hero-button" data-lang-key="heroButton" target="_blank" rel="noopener noreferrer">CV'mi İncele</a>
+</header>
+
+<main class="split-container" id="projeler">
+  <section class="split-section left">
+    <h2 class="title" data-lang-key="webTitle">WEB</h2>
+    <div class="project-list" id="web-projects-list"></div>
+  </section>
+  <section class="split-section right">
+    <h2 class="title" data-lang-key="gameTitle">OYUN</h2>
+    <div class="project-list" id="game-projects-list"></div>
+  </section>
+</main>
+
+<footer class="social-section" id="iletisim">
+  <h3 data-lang-key="socialTitle">Bana Ulaşın</h3>
+  <div class="social-links">
+    <a href="https://github.com/bozben" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/baris-ozben/" target="_blank">LinkedIn</a>
+    <a href="https://bozben94.itch.io/" target="_blank">Itch.io</a>
+    <a href="mailto:b.ozben94@gmail.com">Mail</a>
+
+  </div>
+</footer>
+
+<div id="modal-container" class="modal-container">
+  <div class="modal-content">
+    <span class="modal-close-btn">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+/* --- Değişkenler ve Genel Stiller --- */
+:root {
+    --navy-blue: #0d253f;
+    --rich-yellow: #ffc700;
+    --white: #f5f5f5;
+    --background-dark: #0a192f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ a:link, a:visited {
+     color: #f5f5f5;
+     font-weight: bold;
+     text-decoration: none;
+ }
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-dark);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+/* --- Navigasyon Barı --- */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--rich-yellow);
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--rich-yellow);
+}
+
+/* --- Hero Bölümü --- */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* --- Genel Buton Stili --- */
+.hero-button {
+    display: inline-block;
+    background-color: var(--rich-yellow);
+    color: var(--navy-blue);
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.hero-button:hover {
+    transform: scale(1.05);
+    background-color: var(--white);
+    color: var(--navy-blue);
+}
+
+/* --- İkiye Bölünmüş Projeler Bölümü --- */
+.split-container {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+
+.split-section {
+    flex: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: flex 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.split-section.left { background-color: var(--navy-blue); }
+.split-section.right { background-color: var(--rich-yellow); }
+
+.split-section.left .title { color: var(--rich-yellow); }
+.split-section.right .title { color: var(--navy-blue); }
+
+.split-container.hover-left .left,
+.split-container.hover-right .right {
+    flex: 2.5;
+}
+.split-container.hover-left .right,
+.split-container.hover-right .left {
+    flex: 1;
+}
+.split-container.hover-left .left .title,
+.split-container.hover-right .right .title {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* --- Proje Listesi --- */
+.project-list {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+.split-container.hover-left .left .project-list,
+.split-container.hover-right .right .project-list {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.project-item {
+    font-size: 2.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: transform 0.3s;
+}
+
+.split-section.left .project-item { color: var(--white); }
+.split-section.right .project-item { color: var(--navy-blue); }
+
+.project-item:hover {
+    transform: scale(1.1);
+}
+
+/* --- Sosyal Medya Bölümü --- */
+.social-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #112240;
+}
+
+.social-section h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--rich-yellow);
+    transform: translateY(-5px);
+}
+
+/* --- Modal Penceresi --- */
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 25, 47, 0.9);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #112240;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1100px;
+    position: relative;
+}
+
+.modal-close-btn {
+    color: var(--white);
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 10;
+}
+.modal-close-btn:hover { color: var(--rich-yellow); }
+
+#modal-body h2 {
+    font-size: 2.2rem;
+    color: var(--rich-yellow);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+#modal-body p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+#modal-body .hero-button {
+    margin-top: 30px;
+}
+
+/* --- Modal Medya Yerleşimi --- */
+.modal-video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.modal-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.modal-media-wrapper.side-by-side {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.side-by-side .modal-video-wrapper {
+    flex: 1.5;
+}
+.side-by-side .slider-container {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* --- Modal Slider Stilleri --- */
+.slider-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #000;
+}
+.slider-wrapper {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.slider-image {
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%;
+    object-fit: contain;
+}
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(10, 25, 47, 0.5);
+    color: var(--white);
+    border: none;
+    font-size: 2rem;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.slider-arrow:hover { background-color: rgba(10, 25, 47, 0.8); }
+.slider-arrow.disabled { opacity: 0.3; cursor: default; }
+#prev-btn { left: 10px; border-radius: 5px 0 0 5px; }
+#next-btn { right: 10px; border-radius: 0 5px 5px 0; }
+/* --- Dil Değiştirme Butonları --- */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 30px;
+    border: 1px solid var(--rich-yellow);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.lang-switcher span {
+    color: var(--rich-yellow);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.lang-btn {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, opacity 0.3s;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+    color: var(--rich-yellow);
+    opacity: 1;
+}
+@media (max-width: 768px) {
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .project-item .project-name {
+        font-size: 1.8rem;
+    }
+
+    #modal-body h2 {
+        font-size: 1.8rem;
+    }
+    #modal-body p {
+        font-size: 1rem;
+    }
+
+    .modal-media-wrapper.side-by-side {
+        flex-direction: column;
+    }
+    .side-by-side .slider-container {
+        margin-bottom: 20px;
+    }
+}
