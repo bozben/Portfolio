@@ -64,20 +64,85 @@ const webProjects = [
 
 const gameProjects = [
     {
+        id: 'Pocket_Legion',
+        name_tr: 'Pocket Legion',
+        name_en: 'Pocket Legion',
+        description_tr: 'Legionlarınızı kontrol ederek kahramanların yendiğiniz, aynı zamanda ritim mini oyunuyla Legionlarınızı güçlendirdiğiniz bir strateji oyunu',
+        description_en: 'A strategy game where you control your legions, defeat heroes, and strengthen your legions through a rhythm mini-game.',
+        media: [
+            'https://i.ibb.co/NnjDjf4x/PL1.png',
+            'https://i.ibb.co/jv49TsX1/PL2.png',
+            'https://i.ibb.co/33jwgyL/PL3.png',
+            'https://i.ibb.co/M5M1Rc2w/PL5.png'
+        ],
+        video: 'https://www.youtube.com/embed/01BvmPGgPGE',
+        link: 'https://bozben94.itch.io/pocket-legion'
+    },
+    {
+        id: 'Gloop',
+        name_tr: 'Gloop',
+        name_en: 'Gloop',
+        description_tr: 'Sevimli bir slime yönettiğiniz ve oyundaki puzzleları kendisinin farklı kopyalarını oluşturarak çözdüğünüz bir platformer-puzzle oyunu',
+        description_en: 'A platformer-puzzle game where you control a cute slime and solve puzzles by creating different copies of itself.',
+        media: [
+            'https://i.ibb.co/Tx70kjtw/sl1.png',
+            'https://i.ibb.co/SXyKj8xS/sl2.png',
+            'https://i.ibb.co/RTSNBq91/sl3.png',
+            'https://i.ibb.co/wNdpV3gp/sl4.png',
+            'https://i.ibb.co/N2sGkfdf/sl5.png'
+        ],
+        video: 'https://www.youtube.com/embed/ycscArqt44E',
+        link: 'https://bozben94.itch.io/gloop'
+    },
+    {
+        id: 'Static_Switch',
+        name_tr: 'Static Switch',
+        name_en: 'Static Switch',
+        description_tr: 'Kendinizi sessiz bir apartmanda buluyorsunuz, normal kurallara uymayan bir yer burası. Perili değil, tam olarak değil. Sadece... değişiyor. Her şeyin anahtarı, odalara dağılmış eski televizyonlar gibi görünüyor. Ekranlar kontrol noktaları görevi görüyor, ancak dünyayı kaydetmiyorlar—sıfırlar. Bir televizyonu etkinleştirdiğinizde, oda eski bir kayıt dosyasını yeniden yüklemek gibi, önceki haline geri dönüyor. Açtığınız bir yol kayboluyor. Dünya unutabilir, ama siz unutmazsınız.',
+        description_en: 'You find yourself in a quiet apartment, a place that does not play by normal rules. It is not haunted, not exactly. It just... changes. The key to it all seems to be the old televisions scattered around the rooms. The screens act as checkpoints, but they do not save the world—they reset it. When you activate a TV, the room reverts to how it was before, like reloading an old save file. A path you opened is gone. The world may forget, but you do not.',
+        media: [
+            'https://i.ibb.co/VWdfCRhf/SS1.png',
+            'https://i.ibb.co/S7DJ8JnV/ss2.png',
+            'https://i.ibb.co/93ghZjVx/ss3.png',
+            'https://i.ibb.co/kgk3fysV/ss4.png',
+            'https://i.ibb.co/zh1Dhnf3/ss5.png',
+            'https://i.ibb.co/MkHFMKpt/ss6.png'
+        ],
+        video: 'https://www.youtube.com/embed/uqpI6XJzpXE',
+        link: 'https://bozben94.itch.io/static-switch'
+    },
+    {
+        id: 'Riskbound',
+        name_tr: 'Riskbound',
+        name_en: 'Riskbound',
+        description_tr: 'Riskbound Vampire Survivor tarzında bir oyun ancak bir farkı var. Oyundaki yetenekler yükseltilebiliyor ancak bu yükseltmeler bazı riskleri beraberinde getiriyor. Risk arttıkça yeteneklerin kuvveti de artıyor.',
+        description_en: 'Riskbound is a Vampire Survivors-like game with a catch. The abilities in the game have upgrades, but those upgrades come with a price. The higher the risk, the higher the price and the buffs.',
+        media: [
+            'https://i.ibb.co/9HwtW1dY/vam1.png',
+            'https://i.ibb.co/mV3swtw5/vam2.png',
+            'https://i.ibb.co/m5sRTptm/vam4.png',
+            'https://i.ibb.co/8LfqK7cP/vam5.png'
+        ],
+        video: 'https://www.youtube.com/embed/3p__59IWGes',
+        link: 'https://bozben94.itch.io/riskbound'
+    },
+    {
         id: 'hikikomori',
         name_tr: 'Hikikomori',
         name_en: 'Hikikomori',
         description_tr: 'Hikikomori projesinde, ileri derecede sosyal anksiyete yaşayan ve toplumdan izole olan kişileri anlatan bir oyun geliştirdik. Bu üç kişilik ekipte ben, oyunun voxel grafiklerinin tasarımını ve yapımını üstlendim. Bu süreçte oyunun sanatsal yönünü oluşturan karakter modellemelerini, çevre tasarımlarını ve nesne modellemelerini oluşturdum. Kullandığım voxel stili, projenin temasına uygun olarak minimalist ve sembolik bir estetik sağladı. Bu projenin hikaye ve kodlama kısmını üstlenen arkadaşlarımın özverili çalışmalarıyla birlikte, projeyi başarıyla tamamladık.',
         description_en: 'I was part of a three-person team that developed the Hikikomori project, a game about individuals who experience severe social anxiety and isolate themselves from society. In this project, I was responsible for designing and creating the game\'s voxel graphics. I handled the entire artistic direction of the game, including character modeling, environment design, and asset creation. The voxel art style I used provided a minimalist and symbolic aesthetic that perfectly complemented the game\'s theme. I successfully completed this project alongside my two teammates who handled the story and coding.',
-        media: ['https://i.postimg.cc/RCJrfM9w/hiki1.png',
-                'https://i.postimg.cc/dQbbjztp/hiki2.png',
-                'https://i.postimg.cc/y8P2BxXC/hiki3.png',
-                'https://i.postimg.cc/MpxghVBY/hiki4.png',
-                'https://i.postimg.cc/JnyFbqwR/hiki5.png',
-                'https://i.postimg.cc/zDgMv0Sj/hiki6.png',
-                'https://i.postimg.cc/tgvfZcMr/hiki7.png',
-                'https://i.postimg.cc/Fz3n6Hsq/hiki8.png',
-                'https://i.postimg.cc/m235Nkn1/hiki9.png'],
+        media: [
+            'https://i.postimg.cc/RCJrfM9w/hiki1.png',
+            'https://i.postimg.cc/dQbbjztp/hiki2.png',
+            'https://i.postimg.cc/y8P2BxXC/hiki3.png',
+            'https://i.postimg.cc/MpxghVBY/hiki4.png',
+            'https://i.postimg.cc/JnyFbqwR/hiki5.png',
+            'https://i.postimg.cc/zDgMv0Sj/hiki6.png',
+            'https://i.postimg.cc/tgvfZcMr/hiki7.png',
+            'https://i.postimg.cc/Fz3n6Hsq/hiki8.png',
+            'https://i.postimg.cc/m235Nkn1/hiki9.png'
+        ],
         video: 'https://www.youtube.com/embed/AJFtSVutpZU?si=V4KZjZwlA8Mb2e6b',
         link: 'https://bozben94.itch.io/hikikomori'
     },
@@ -87,9 +152,11 @@ const gameProjects = [
         name_en: 'Cylinder Shooter',
         description_tr: 'Cylinder Shooter, toplamda 5 seviyeden oluşan bir top-down shooter oyunudur. Bu oyunda oyuncular, dalgalar halinde üzerlerine gelen düşmanları alt etmeye çalışır. Her seviye, farklı bir silahla oyuna tazelik katarak stratejik bir derinlik sunar. Son seviye tamamlandığında ise oyun, oyunculara yüksek skorlar yapma imkanı tanıyan sonsuz moda geçer.',
         description_en: 'Cylinder Shooter is a top-down shooter game with 5 unique levels. Players face off against waves of enemies, with each level introducing a new weapon to keep the gameplay fresh and strategic. After completing the final level, the game transitions into an endless mode, offering players a chance to achieve higher scores and continue the action.',
-        media: ['https://i.postimg.cc/438CvymQ/cylindershooter2.png',
+        media: [
+            'https://i.postimg.cc/438CvymQ/cylindershooter2.png',
             'https://i.postimg.cc/k4D0TCS3/cylindershooter3.png',
-            'https://i.postimg.cc/tTfLfcd1/cylindershooter4.png'],
+            'https://i.postimg.cc/tTfLfcd1/cylindershooter4.png'
+        ],
         video: 'https://www.youtube.com/embed/mQNMTVIfkTk?si=nr3eCqsQq1FI5itk',
         link: 'https://bozben94.itch.io/cylindershooter'
     },
@@ -99,9 +166,11 @@ const gameProjects = [
         name_en: 'Hill Ball',
         description_tr: 'Hillball, düz bir arena üzerinde üzerinize gelen topları platformdan aşağı itmeye çalıştığınız basit ve yenilikçi bir oyundur. Oyundaki en belirgin özellik, topun sadece ileri-geri hareket edebilmesi, ancak kamerayı çevirerek bu yönü değiştirebilmenizdir. Bu benzersiz kontrol sistemi, oyuna sıradanlıktan uzak, stratejik bir derinlik katmaktadır.',
         description_en: 'Hillball is a simple and innovative game where you push incoming balls off a flat arena. The game\'s unique control system is its most notable feature: you can only move the ball forward and backward, but you can change its direction by rotating the camera. This unconventional mechanic adds a strategic layer, making the gameplay unique and engaging.',
-        media: ['https://i.postimg.cc/9QhjCs6Z/hillball1.png',
-                'https://i.postimg.cc/13r1tJST/hillball2.png',
-                'https://i.postimg.cc/bvYc2kNv/hillball3.png'],
+        media: [
+            'https://i.postimg.cc/9QhjCs6Z/hillball1.png',
+            'https://i.postimg.cc/13r1tJST/hillball2.png',
+            'https://i.postimg.cc/bvYc2kNv/hillball3.png'
+        ],
         video: 'https://www.youtube.com/embed/wEEokhPVMjU?si=XCQZqWK-fXqa89qM',
         link: 'https://bozben94.itch.io/hill-ball'
     }
