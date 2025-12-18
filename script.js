@@ -159,20 +159,6 @@ const gameProjects = [
         ],
         video: 'https://www.youtube.com/embed/mQNMTVIfkTk?si=nr3eCqsQq1FI5itk',
         link: 'https://bozben94.itch.io/cylindershooter'
-    },
-    {
-        id: 'hillball',
-        name_tr: 'Hill Ball',
-        name_en: 'Hill Ball',
-        description_tr: 'Hillball, düz bir arena üzerinde üzerinize gelen topları platformdan aşağı itmeye çalıştığınız basit ve yenilikçi bir oyundur. Oyundaki en belirgin özellik, topun sadece ileri-geri hareket edebilmesi, ancak kamerayı çevirerek bu yönü değiştirebilmenizdir. Bu benzersiz kontrol sistemi, oyuna sıradanlıktan uzak, stratejik bir derinlik katmaktadır.',
-        description_en: 'Hillball is a simple and innovative game where you push incoming balls off a flat arena. The game\'s unique control system is its most notable feature: you can only move the ball forward and backward, but you can change its direction by rotating the camera. This unconventional mechanic adds a strategic layer, making the gameplay unique and engaging.',
-        media: [
-            'https://i.postimg.cc/9QhjCs6Z/hillball1.png',
-            'https://i.postimg.cc/13r1tJST/hillball2.png',
-            'https://i.postimg.cc/bvYc2kNv/hillball3.png'
-        ],
-        video: 'https://www.youtube.com/embed/wEEokhPVMjU?si=XCQZqWK-fXqa89qM',
-        link: 'https://bozben94.itch.io/hill-ball'
     }
 ];
 
